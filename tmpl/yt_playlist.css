@@ -1,0 +1,8 @@
+#yt-player {}
+#yt-playlistitems {list-style-type:none;}
+#yt-playlistitems li {width:150px;display:inline-block;height:200px;}
+#yt-playlistitems li.active {background:#ddd;}
+#yt-paging a.active {color:#000;}
+#yt-paging .back, #yt-paging .pages, #yt-paging .next {display:inline-block;}
+#yt-paging .back, #yt-paging .next {width:100px;}
+#yt-paging .pages {width:200px;}

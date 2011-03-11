@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.0.0">
+	<name>YT Playlist</name>
+	<author>Paul English</author>
+	<creationDate>March 2011</creationDate>
+	<copyright>Copyright (C) 2011 All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>paul@firstleft.net</authorEmail>
+	<authorUrl>firstleft.net</authorUrl>
+	<version>1.0.0</version>
+	<description>Module to load a YouTube Player and Pageable Playlist into a page</description>
+	<files>
+		<filename module="mod_banners">mod_yt_playlist.php</filename>
+	</files>
+	<params>
+	  <param name="playlistid" type="text" label="Playlist ID" description="The Playlist ID containing the playlist you wish to use" />
+	  <param name="playlist-length" type="text" label="Playlist Length" description="Number of items to show in the playlist area" />
+	</params>
+</install>
