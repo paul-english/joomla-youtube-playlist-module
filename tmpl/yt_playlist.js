@@ -148,7 +148,7 @@
 	 player_frame.src = 'http://www.youtube.com/embed/' + yt_id;
 
 	 var title = document.getElementById('yt-player').children[1];
-	 title.innerHTML = parent.children[1].innerHTML;
+	 title.innerHTML = parent.children[0].children[0].children[1].innerHTML;
 
 	 return false;
      }
