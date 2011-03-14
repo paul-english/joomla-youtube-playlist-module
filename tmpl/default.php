@@ -13,7 +13,7 @@ foreach ($list as $item) :
     if ($i == 0) : 
         ?>
 		<div id="yt-player">
-            <iframe class="youtube-player" type="text/html" width="640" height="385" src="http://www.youtube.com/embed/<?php echo $id[0]; ?>" frameborder="0"></iframe>
+            <iframe class="youtube-player" type="text/html" width="<?php echo $params->get('player-width') ?>" height="<?php echo $params->get('player-height') ?>" src="http://www.youtube.com/embed/<?php echo $id[0]; ?>" frameborder="0"></iframe>
     		<div class="title"><?php echo $item->title; ?></div>
 		</div>
         <ul id="yt-playlistitems">
@@ -26,7 +26,7 @@ foreach ($list as $item) :
    		    $thumb = $item->xpath('media:group/media:thumbnail');
             $thumb = $thumb[0]->xpath('@url');
 		    ?>
-            <img src="<?php echo $thumb[0]; ?>" />
+            <img src="<?php echo $thumb[0]; ?>" width="<?php echo $params->get('thumbnail-width') ?>" height="<?php echo $params->get('thumbnail-height') ?>" />
 		</a>
 		<a href="javascript:;" class="title"><?php echo $item->title; ?></a>
 		<div class="description">

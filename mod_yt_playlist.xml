@@ -10,10 +10,22 @@
 	<version>1.0.0</version>
 	<description>Module to load a YouTube Player and Pageable Playlist into a page</description>
 	<files>
-		<filename module="mod_banners">mod_yt_playlist.php</filename>
+		<filename>mod_yt_playlist.xml</filename>
+		<filename module="mod_yt_playlist">mod_yt_playlist.php</filename>
+		<filename>helper.php</filename>
+		<filename>index.html</filename>
+		<filename>tmpl/index.html</filename>
+		<filename>tmpl/default.php</filename>
+		<filename>tmpl/yt_playlist.css</filename>
+		<filename>tmpl/yt_playlist.js</filename>
+		<filename>tmpl/yt_playlist.min.js</filename>
 	</files>
 	<params>
 	  <param name="playlistid" type="text" label="Playlist ID" description="The Playlist ID containing the playlist you wish to use" />
-	  <param name="playlist-length" type="text" label="Playlist Length" description="Number of items to show in the playlist area" />
+	  <param name="playlist-length" type="text" label="Playlist Item Count" default="3" description="Number of items to show in the playlist area" />
+	  <param name="player-width" type="text" label="Player Width" default="640" description="Width of the youtube video player" />
+	  <param name="player-height" type="text" label="Player Height" default="385" description="Height of the youtube video player" />
+	  <param name="thumbnail-width" type="text" label="Player Width" default="120" description="Width of the playlist thumbnails" />
+	  <param name="thumbnail-height" type="text" label="Player Height" default="90" description="Height of the playlist thumbnails" />
 	</params>
 </install>
