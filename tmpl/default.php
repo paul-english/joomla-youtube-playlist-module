@@ -13,20 +13,20 @@ foreach ($list as $item) :
     if ($i == 0) : 
         ?>
 		<div id="yt-player">
-            <iframe class="youtube-player" type="text/html" width="<?php echo $params->get('player-width') ?>" height="<?php echo $params->get('player-height') ?>" src="http://www.youtube.com/embed/<?php echo $id[0]; ?>" frameborder="0"></iframe>
+            <iframe class="youtube-player" type="text/html" width="<?php echo $params->get('player-width', '640') ?>" height="<?php echo $params->get('player-height', '385') ?>" src="http://www.youtube.com/embed/<?php echo $id[0]; ?>" frameborder="0"></iframe>
     		<div class="title"><?php echo $item->title; ?></div>
 		</div>
         <ul id="yt-playlistitems">
 	    <?php 
     endif;
     ?>
-	<li data-id="<?php echo $id[0]; ?>" style="<?php if ($i >= $params->get('playlist-length')) echo "display:none;"; ?>" class="<?php if($i == 0) echo "active"; ?>">
+	<li data-id="<?php echo $id[0]; ?>" style="<?php if ($i >= $params->get('playlist-length', '3')) echo "display:none;"; ?>" class="<?php if($i == 0) echo "active"; ?>">
         <a href="javascript:;" class="thumbnail">
 		    <?php
    		    $thumb = $item->xpath('media:group/media:thumbnail');
             $thumb = $thumb[0]->xpath('@url');
 		    ?>
-            <img src="<?php echo $thumb[0]; ?>" width="<?php echo $params->get('thumbnail-width') ?>" height="<?php echo $params->get('thumbnail-height') ?>" />
+            <img src="<?php echo $thumb[0]; ?>" width="<?php echo $params->get('thumbnail-width', '120') ?>" height="<?php echo $params->get('thumbnail-height', '90') ?>" />
 		</a>
 		<a href="javascript:;" class="title"><?php echo $item->title; ?></a>
 		<div class="description">
@@ -43,7 +43,7 @@ endforeach;
 ?>
 </ul>
 <?php 
-$pages = ($len / $params->get('playlist-length')); 
+$pages = ($len / $params->get('playlist-length', '3')); 
 
 if ($pages > 1) : ?>
 <div id="yt-paging">
