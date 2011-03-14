@@ -25,7 +25,7 @@
 	  <param name="playlist-length" type="text" label="Playlist Item Count" default="3" description="Number of items to show in the playlist area" />
 	  <param name="player-width" type="text" label="Player Width" default="640" description="Width of the youtube video player" />
 	  <param name="player-height" type="text" label="Player Height" default="385" description="Height of the youtube video player" />
-	  <param name="thumbnail-width" type="text" label="Player Width" default="120" description="Width of the playlist thumbnails" />
-	  <param name="thumbnail-height" type="text" label="Player Height" default="90" description="Height of the playlist thumbnails" />
+	  <param name="thumbnail-width" type="text" label="Thumbnail Width" default="120" description="Width of the playlist thumbnails" />
+	  <param name="thumbnail-height" type="text" label="Thumbnail Height" default="90" description="Height of the playlist thumbnails" />
 	</params>
 </install>
