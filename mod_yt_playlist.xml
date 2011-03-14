@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<install type="module" version="1.0.0">
+<install type="module" version="1.5.0">
 	<name>YT Playlist</name>
 	<author>Paul English</author>
 	<creationDate>March 2011</creationDate>
