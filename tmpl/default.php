@@ -13,7 +13,7 @@ foreach ($list as $item) :
     if ($i == 0) : 
         ?>
 		<div id="yt-player">
-            <iframe class="youtube-player" type="text/html" width="<?php echo $params->get('player-width', '640') ?>" height="<?php echo $params->get('player-height', '385') ?>" src="http://www.youtube.com/embed/<?php echo $id[0]; ?>" frameborder="0"></iframe>
+            <iframe class="youtube-player" type="text/html" width="<?php echo $params->get('player-width', '640') ?>" height="<?php echo $params->get('player-height', '385') ?>" src="http://www.youtube.com/embed/<?php echo $id[0]; ?>?wmode=transparent" frameborder="0"></iframe>
     		<div class="title"><?php echo $item->title; ?></div>
 		</div>
         <ul id="yt-playlistitems">

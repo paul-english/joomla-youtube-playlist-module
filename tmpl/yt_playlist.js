@@ -153,7 +153,7 @@
 	 }
 
 	 var player_frame = document.getElementById('yt-player').children[0];
-	 player_frame.src = 'http://www.youtube.com/embed/' + yt_id;
+	 player_frame.src = 'http://www.youtube.com/embed/' + yt_id + '?wmode=transparent';
 
 	 var title = document.getElementById('yt-player').children[1];
 	 title.innerHTML = parent.children[0].children[0].children[1].innerHTML;
