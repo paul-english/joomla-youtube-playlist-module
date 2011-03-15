@@ -85,6 +85,7 @@
 	 setPage(page_number);
      }
 
+     var page_length = false;
      function setPage(num) {
 	 var ul = document.getElementById('yt-playlistitems');
 	 var total = ul.children.length;
@@ -92,9 +93,16 @@
 	 var pages = document.getElementById('yt-paging').children[1];
 	 var num_pages = pages.children.length;
 
-	 var page_length = Math.ceil(total / num_pages);
-	 
-	 console.log('num', num, 'total', total, 'pages', num_pages, 'page_length', page_length);
+	 if (!page_length) {
+             page_length = 0;
+             var i = total;
+             while(i--) {
+		 var li = ul.children[i];
+		 if (li.getAttribute('style') !== 'display:none;') {
+                     page_length++;
+		 }
+             }
+	 }
 
 	 var i = total;
 	 var active = 0;
