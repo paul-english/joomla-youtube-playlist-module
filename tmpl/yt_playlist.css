@@ -1,8 +1,13 @@
-#yt-player {}
-#yt-playlistitems {list-style-type:none;}
-#yt-playlistitems li {width:150px;display:inline-block;height:200px;}
+#yt-player {margin:0;padding:0;}
+#yt-playlistitems {list-style-type:none;width:640px;padding:0;}
+#yt-playlistitems li {width:140px;display:inline-block;height:210px;padding:5px;margin-right:5px;float:left;border:1px solid #aaa;text-align:center;}
 #yt-playlistitems li.active {background:#ddd;}
+#yt-playlistitems li .thumbnail {display:block;}
+#yt-playlistitems li .title {display:block;text-align:left;height:50px;overflow:hidden;}
+#yt-playlistitems li .description {overflow:hidden;height:50px;text-align:left;}
+#yt-playlistitems li .button {background:#aaa;color:white;}
+#yt-paging {width:640px;}
 #yt-paging a.active {color:#000;}
-#yt-paging .back, #yt-paging .pages, #yt-paging .next {display:inline-block;}
+#yt-paging .back, #yt-paging .pages, #yt-paging .next {display:inline-block;height:50px;}
 #yt-paging .back, #yt-paging .next {width:100px;}
 #yt-paging .pages {width:200px;}
