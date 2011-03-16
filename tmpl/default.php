@@ -32,6 +32,7 @@ foreach ($list as $item) :
 		<div class="description">
 	        <?php
 	        $description = $item->xpath('media:group/media:description');
+            $description[0] = preg_replace("/\b(?:(?:https?|ftp):\/\/|www\.)[-a-z0-9+&@#\/%?=~_|!:,.;]*[-a-z0-9+&@#\/%=~_|]/i", "", $description[0]);
             echo $description[0];
             ?>
         </div>
